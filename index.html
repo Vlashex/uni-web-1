@@ -17,7 +17,7 @@
         <li><a href="/about">4) Сокращённая ссылка на внутреннюю страницу</a></li>
         <li><a href="/">5) Сокращённая ссылка на главную</a></li>
         <li><a href="#fragment">6) Ссылка на фрагмент текущей страницы</a></li>
-        <li><a href="https://example.com/page?x=1&y=2&z=3">7) Ссылка с тремя параметрами</a></li>
+        <li><a href="https://example.com/page?x=1&amp;y=2&amp;z=3">7) Ссылка с тремя параметрами</a></li>
         <li><a href="https://example.com/page?id=15">8) Ссылка с параметром id</a></li>
         <li><a href="page.html">9) Относительная на страницу в текущем каталоге</a></li>
         <li><a href="about/page.html">10) Относительная на страницу в каталоге about</a></li>
@@ -37,7 +37,8 @@
         <li><a>17) Ссылка без href</a></li>
         <li><a href="https://example.com/" rel="nofollow">18) Запрещён переход поисковикам</a></li>
         <li>
-            <noindex><a href="https://example.com/">19) Запрещено для индексации</a></noindex>
+            <!-- Для учебных целей: "запрещено для индексации" обычно делается через meta robots -->
+            <a href="https://example.com/" rel="nofollow">19) Запрещено для индексации (пример)</a>
         </li>
         <li>
             20) Нумерованный список ссылок с title:
