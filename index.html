@@ -2,18 +2,17 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Задание 2 — Сайт с таблицей и формой</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
     <header>
         <div class="container header-inner">
             <a href="/" class="logo" aria-label="На главную">
-                <img src="https://kubsu.ru/sites/default/files/logo.png" alt="Логотип КубГУ" width="60" />
+                <img src="https://kubsu.ru/sites/default/files/logo.png" alt="Логотип КубГУ" width="60">
             </a>
             <h1 class="site-title">Учебный сайт</h1>
             <nav aria-label="Основное меню">
@@ -26,7 +25,6 @@
         </div>
     </header>
 
-    
     <main class="container">
         <section aria-labelledby="links-heading">
             <h2 id="links-heading">Маркированный список ссылок</h2>
@@ -35,12 +33,11 @@
                 <li><a href="https://kubsu.ru/">2) Абсолютная ссылка (https)</a></li>
                 <li>
                     3)
-                    <a href="https://kubsu.ru/"><img src="https://kubsu.ru/sites/default/files/logo.png"
-                            alt="Ссылка-изображение" width="100" /></a>
+                    <a href="https://kubsu.ru/">
+                        <img src="https://kubsu.ru/sites/default/files/logo.png" alt="Ссылка-изображение" width="100">
+                    </a>
                 </li>
-                <li>
-                    <a href="/about">4) Сокращённая ссылка на внутреннюю страницу</a>
-                </li>
+                <li><a href="/about">4) Сокращённая ссылка на внутреннюю страницу</a></li>
                 <li><a href="/">5) Сокращённая ссылка на главную</a></li>
                 <li><a href="#fragment">6) Ссылка на фрагмент текущей страницы</a></li>
                 <li>
@@ -49,18 +46,10 @@
                 <li>
                     <a href="https://example.com/page?id=15">8) Ссылка с параметром id</a>
                 </li>
-                <li>
-                    <a href="page.html">9) Относительная на страницу в текущем каталоге</a>
-                </li>
-                <li>
-                    <a href="about/page.html">10) Относительная на страницу в каталоге about</a>
-                </li>
-                <li>
-                    <a href="../page.html">11) Относительная на страницу уровнем выше</a>
-                </li>
-                <li>
-                    <a href="../../page.html">12) Относительная на страницу двумя уровнями выше</a>
-                </li>
+                <li><a href="page.html">9) Относительная на страницу в текущем каталоге</a></li>
+                <li><a href="about/page.html">10) Относительная на страницу в каталоге about</a></li>
+                <li><a href="../page.html">11) Относительная на страницу уровнем выше</a></li>
+                <li><a href="../../page.html">12) Относительная на страницу двумя уровнями выше</a></li>
                 <li>
                     13) Контекстная ссылка: Мы учимся в
                     <a href="https://kubsu.ru/">КубГУ</a>.
@@ -69,34 +58,23 @@
                     <a href="https://ru.wikipedia.org/wiki/HTML#История">14) Ссылка на фрагмент стороннего сайта</a>
                 </li>
                 <li>
-                    15) Ссылки из областей картинки:<br />
-                    <img src="image.png" usemap="#image-map" class="map-image">
-                    
+                    15) Ссылки из областей картинки:<br>
+                    <img src="image.png" alt="" usemap="#image-map" class="map-image">
                     <map name="image-map">
-                        <area target="" alt="" title="" href="https://www.wikipedia.org/" coords="29,52,123,369" shape="rect">
-                        <area target="" alt="" title="" href="https://www.wiktionary.org/" coords="304,217,125" shape="circle">
+                        <area href="https://www.wikipedia.org/" coords="29,52,123,369" shape="rect" alt="Wikipedia">
+                        <area href="https://www.wiktionary.org/" coords="304,217,125" shape="circle" alt="Wiktionary">
                     </map>
                 </li>
-                <li><a href="">16) Ссылка с пустым href</a></li>
-                <li><a>17) Ссылка без href</a></li>
-                <li>
-                    <a href="https://example.com/" rel="nofollow">18) Запрещён переход поисковикам</a>
-                </li>
-                <li>
-                    <a href="https://example.com/" rel="nofollow">19) Запрещено для индексации</a>
-                </li>
+                <li><a href="#">16) Ссылка с пустым href</a></li>
+                <li><span>17) Ссылка без href</span></li>
+                <li><a href="https://example.com/" rel="nofollow">18) Запрещён переход поисковикам</a></li>
+                <li><a href="https://example.com/" rel="nofollow">19) Запрещено для индексации</a></li>
                 <li>
                     20) Нумерованный список ссылок с title:
                     <ol>
-                        <li>
-                            <a href="https://example.com/" title="Описание ссылки 1">Ссылка 1</a>
-                        </li>
-                        <li>
-                            <a href="https://example.com/" title="Описание ссылки 2">Ссылка 2</a>
-                        </li>
-                        <li>
-                            <a href="https://example.com/" title="Описание ссылки 3">Ссылка 3</a>
-                        </li>
+                        <li><a href="https://example.com/" title="Описание ссылки 1">Ссылка 1</a></li>
+                        <li><a href="https://example.com/" title="Описание ссылки 2">Ссылка 2</a></li>
+                        <li><a href="https://example.com/" title="Описание ссылки 3">Ссылка 3</a></li>
                     </ol>
                 </li>
                 <li>
@@ -164,27 +142,27 @@
         <section aria-labelledby="form-heading">
             <h2 id="form-heading">Форма</h2>
             <form action="/" method="post">
-                <label>ФИО:<br />
-                    <input type="text" name="fio" placeholder="Иванов Иван Иванович" required />
-                </label><br />
+                <label>ФИО:<br>
+                    <input type="text" name="fio" placeholder="Иванов Иван Иванович" required>
+                </label><br>
 
-                <label>Телефон:<br />
-                    <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" required />
-                </label><br />
+                <label>Телефон:<br>
+                    <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" required>
+                </label><br>
 
-                <label>E-mail:<br />
-                    <input type="email" name="email" placeholder="example@mail.ru" required />
-                </label><br />
+                <label>E-mail:<br>
+                    <input type="email" name="email" placeholder="example@mail.ru" required>
+                </label><br>
 
-                <label>Дата рождения:<br />
-                    <input type="date" name="birthdate" required />
-                </label><br />
+                <label>Дата рождения:<br>
+                    <input type="date" name="birthdate" required>
+                </label><br>
 
-                Пол:<br />
-                <label><input type="radio" name="gender" value="male" required /> Мужской</label>
-                <label><input type="radio" name="gender" value="female" required /> Женский</label><br />
+                Пол:<br>
+                <label><input type="radio" name="gender" value="male" required> Мужской</label>
+                <label><input type="radio" name="gender" value="female" required> Женский</label><br>
 
-                <label>Любимый язык программирования:<br />
+                <label>Любимый язык программирования:<br>
                     <select name="languages[]" multiple size="6" required>
                         <option>Pascal</option>
                         <option>C</option>
@@ -198,20 +176,19 @@
                         <option>Prolog</option>
                         <option>Scala</option>
                     </select>
-                </label><br />
+                </label><br>
 
-                <label>Биография:<br />
+                <label>Биография:<br>
                     <textarea name="bio" rows="5" cols="40" placeholder="Расскажите о себе..." required></textarea>
-                </label><br />
+                </label><br>
 
-                <label><input type="checkbox" name="contract" required /> С контрактом ознакомлен(а)</label><br />
+                <label><input type="checkbox" name="contract" required> С контрактом ознакомлен(а)</label><br>
 
-                <input type="submit" value="Сохранить" />
+                <input type="submit" value="Сохранить">
             </form>
         </section>
     </main>
 
-    
     <footer>
         <div class="container">
             <p>&copy; 2025 Учебный сайт. Все права защищены.</p>
